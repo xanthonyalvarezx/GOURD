@@ -1,6 +1,8 @@
 <x-dash title="">
-    <container class="dash-link-container">
-        <h3><a class="dash-link" href="">ADD MERCH</a></h3>
-        <h3><a class="dash-link" href="">ADD EVENT</a></h3>
-    </container>
+    <div class="dash-link-container">
+        <div class="dash-links">
+            <h1><a class="dash-link" href="{{ route('addMerch') }}">ADD MERCH</a></h1>
+            <h1><a class="dash-link" href="">ADD EVENT</a></h1>
+        </div>
+    </div>
 </x-dash>

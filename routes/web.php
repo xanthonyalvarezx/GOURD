@@ -10,9 +10,8 @@ Route::get('/merch', [pageController::class, 'merch'])->name('merch');
 Route::get('/contact', [pageController::class, 'contact'])->name('contact');
 
 
-Route::prefix('dashboard')->
-    group(function () {
-        Route::get('/admin', [DashboardController::class, 'adminPage']);
-
-    });
-
+Route::prefix('dashboard')->group(function () {
+    Route::get('/admin', [DashboardController::class, 'adminPage']);
+    Route::get('/add-merch', [DashboardController::class, 'addMerch'])->name('addMerch');
+    Route::post('/add-merch', [DashboardController::class, 'storeMerch'])->name('storeMerch');
+});

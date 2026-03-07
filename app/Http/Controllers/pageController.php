@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Merch;
 use Illuminate\Http\Request;
 
 class pageController extends Controller
@@ -16,7 +17,8 @@ class pageController extends Controller
     }
     public function merch()
     {
-        return view('merch');
+        $merch = Merch::orderBy('created_at', 'desc')->get();
+        return view('merch', ['merch' => $merch]);
     }
     public function contact()
     {
