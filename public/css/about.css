@@ -1,0 +1,87 @@
+#main-container {
+    min-height: 100vh;
+    background-image: url("../images/about_us_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 75vh 0 10vh 0;
+}
+
+/* Card Layout */
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid white;
+    width: 30vw;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Start hidden */
+    opacity: 0;
+}
+
+.about-photo,
+.about-text {
+    width: 50%;
+}
+
+/* ===================== */
+/* ANIMATIONS */
+/* ===================== */
+
+@keyframes slide-fade-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    to {
+        opacity: 0.5;
+        transform: translateX(-25vw);
+    }
+}
+
+@keyframes slide-fade-right {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(25vw);
+    }
+}
+
+/* ===================== */
+/* Apply animations */
+/* ===================== */
+
+.about-card:nth-child(1) {
+    box-shadow: 2px 2px 20px 20px rgb(140, 13, 190);
+    animation: slide-fade-left 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.about-card:nth-child(2) {
+    box-shadow: 2px 2px 20px 20px rgb(140, 13, 190);
+    animation: slide-fade-right 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.about-card:nth-child(3) {
+    box-shadow: 2px 2px 20px 20px rgb(140, 13, 190);
+    animation: slide-fade-left 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}

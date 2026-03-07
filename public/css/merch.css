@@ -1,0 +1,17 @@
+.merch-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vw;
+    h4 {
+        text-align: center;
+    }
+    img {
+        border-radius: 10px;
+    }
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}

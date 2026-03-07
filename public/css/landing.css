@@ -1,0 +1,118 @@
+#main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    background: radial-gradient(
+        circle at top,
+        #1b1029 0,
+        #050308 55%,
+        #000000 100%
+    );
+    color: #f5ecff;
+}
+
+.albums_div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.album_content {
+    max-width: 420px;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+.album_content h3 {
+    font-family:
+        "Creepster",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.08em;
+    margin: 0 0 1rem;
+    color: #f8e4ff;
+    text-shadow: 0 0 10px rgba(181, 125, 255, 0.9);
+}
+
+.album_content p,
+.album_content a {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.album_content a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #f8e4ff;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 0.35rem 0.85rem;
+}
+
+.album_content a::before {
+    content: "";
+    position: absolute;
+    inset: -0.25rem -0.7rem;
+    background: radial-gradient(
+        circle at 30% 50%,
+        rgba(255, 255, 255, 1),
+        rgba(173, 105, 216, 0.15)
+    );
+    border-radius: 60% 40% 65% 35% / 40% 70% 30% 60%;
+    opacity: 0;
+    filter: blur(5px);
+    z-index: 0;
+    transition:
+        opacity 0.25s ease,
+        transform 0.3s ease;
+    transform: scale(0.7);
+}
+
+.album_content a:hover::before {
+    opacity: 0.9;
+    transform: scale(1.6);
+}
+.album_title {
+    width: 100%;
+    text-align: center;
+}
+
+.album_cover img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow:
+        0 0 25px rgba(181, 125, 255, 0.75),
+        0 0 60px rgba(5, 0, 15, 0.9);
+}
+
+@media (max-width: 768px) {
+    #main-container {
+        padding-top: 2rem;
+    }
+
+    .albums_div {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .album_content {
+        max-width: 100%;
+    }
+}
