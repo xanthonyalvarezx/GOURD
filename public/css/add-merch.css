@@ -59,7 +59,7 @@ body {
         -apple-system,
         sans-serif;
     color: #111;
-    background-color: #ffffff;
+    background-color: #000000;
     border: none;
     border-radius: 8px;
     transition:
@@ -70,8 +70,8 @@ body {
 .form-container input.merch_input:focus,
 .form-container textarea#merch_description:focus {
     outline: none;
-    border-color: #6c0aed;
-    box-shadow: 0 0 0 3px rgba(108, 10, 237, 0.25);
+    border-color: #f7cc2f;
+    box-shadow: 2px 2px 15px 15px rgba(221, 203, 6, 0.25);
 }
 
 .form-container input.merch_input::placeholder,
