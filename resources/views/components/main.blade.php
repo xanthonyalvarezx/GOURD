@@ -12,6 +12,24 @@
 
 
 <body>
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+        if (document.documentElement.scrollTop > 0) document.documentElement.scrollTop = 0;
+        if (document.body.scrollTop > 0) document.body.scrollTop = 0;
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        });
+        window.addEventListener('pageshow', function(e) {
+            if (e.persisted) {
+                window.scrollTo(0, 0);
+            }
+        });
+    </script>
     @include('components.nav')
     <div id="main-content">
         {{ $slot }}

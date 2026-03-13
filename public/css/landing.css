@@ -29,10 +29,7 @@
 }
 
 .album_content h3 {
-    font-family:
-        "Creepster",
-        "Spline Sans",
-        sans-serif;
+    font-family: "Creepster", "Spline Sans", sans-serif;
     font-size: 2.5rem;
     letter-spacing: 0.08em;
     margin: 0 0 1rem;
@@ -140,5 +137,187 @@
     .album_content p,
     .album_content a {
         font-size: 0.95rem;
+    }
+}
+
+/* Carousel – above footer */
+.carousel-section {
+    padding: 4rem 1rem 3rem;
+    background-image:
+        url("../images/carouse-bg.png"),
+        linear-gradient(to bottom, transparent, rgba(20, 10, 35, 0.6));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffdd00;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.carousel-heading {
+    text-align: center;
+    font-family: "Creepster", cursive;
+    font-size: 3rem;
+    color: #ffdd00;
+    margin: 0 0 1.5rem;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 12px rgba(255, 221, 0, 0.4);
+}
+
+.carousel {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.carousel-slide h2 {
+    margin: 0 0 0.75rem;
+    font-family: "Spline Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffdd00;
+    letter-spacing: 0.02em;
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+.carousel-slide-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35.6vw;
+    border-radius: 10px 10px 0 0;
+    h3 {
+        text-decoration: none;
+
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        border-radius: 0.5rem;
+    }
+}
+
+.carousel-slide a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #ffdd00;
+}
+
+.carousel-slide a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    color: #81129b;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: top;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 221, 0, 0.25);
+    border-color: #ffdd00;
+}
+
+.carousel-prev {
+    left: -0.5rem;
+}
+
+.carousel-next {
+    right: -0.5rem;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.carousel-dot:hover {
+    border-color: #ffdd00;
+    background: rgba(255, 221, 0, 0.3);
+}
+
+.carousel-dot[aria-current="true"] {
+    background: #ffdd00;
+    border-color: #ffdd00;
+}
+
+@media (max-width: 768px) {
+    .carousel-section {
+        padding: 3rem 0.75rem 2rem;
+    }
+    .carousel-heading {
+        font-size: 1.5rem;
+    }
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.5rem;
+    }
+    .carousel-prev {
+        left: 0.25rem;
+    }
+    .carousel-next {
+        right: 0.25rem;
     }
 }
