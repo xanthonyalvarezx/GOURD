@@ -2,9 +2,9 @@
     @push('styles')
         <link rel="stylesheet" href="{{ asset('css/merch.css') }}">
     @endpush
-    <div id="about-container">
+    <div id="merch-container">
         <container class="main-container">
-            <div class="merch-div">
+            {{-- <div class="merch-div">
                 @foreach ($merch as $item)
                     <div class="merch-card">
                         <h4 class="merch-title">{{ $item->title }}</h4>
@@ -13,7 +13,8 @@
                         <p class="merch-description">{{ $item->description }}</p>
                     </div>
                 @endforeach
-            </div>
+            </div> --}}
+            <h1 style="text-align: center; color: #fff; font-size: 2rem; margin-top: 100px;">UNDER CONSTRUCTION</h1>
         </container>
     </div>
 </x-main>

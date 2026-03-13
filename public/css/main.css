@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+
 * {
     box-sizing: border-box;
 }
@@ -13,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    font-family: "Spline Sans", sans-serif;
 }
 
 img {
@@ -33,17 +36,62 @@ footer {
     min-height: 25vh;
     padding: 2rem 1rem;
     text-align: center;
-    color: #c4b0e0;
+    color: #ffffff;
     position: relative;
     z-index: 10;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
 }
 
 footer .date-text {
-    font-family:
-        system-ui,
-        -apple-system,
-        sans-serif;
+    font-family: "Spline Sans", sans-serif;
     font-size: 0.95rem;
+}
+
+footer .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 1rem;
+    color: #ffffff;
+}
+
+footer .social-link h4 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+footer .social-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .social-link a:hover {
+    opacity: 0.85;
+}
+
+footer .social-link-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+footer .social-link-icon-threads,
+footer .social-link-icon-threads path {
+    fill: #ffffff;
+}
+
+footer .date-text > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
 }
 
 @media (max-width: 1024px) {

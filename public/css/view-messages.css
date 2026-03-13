@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+body {
+    background-image: url("../images/view-messages-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 98.3vh;
+}
+.messages-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 3rem;
+}
+
+.messages-container h1 {
+    font-family: "Creepster", cursive;
+    color: #ffdd00;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.message-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.message-card {
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(140, 13, 190, 0.2);
+    text-align: center;
+}
+
+.message-card .message-name {
+    margin: 0 0 0.35rem;
+    color: #ffdd00;
+    font-size: 1.2rem;
+    font-family: "Creepster", cursive;
+    letter-spacing: 0.03em;
+}
+
+.message-card .message-email {
+    margin: 0 0 0.75rem;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: normal;
+}
+
+.message-card .message-email a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.message-card .message-email a:hover {
+    text-decoration: underline;
+}
+
+.message-card .message-message {
+    margin: 0;
+    color: #e8e0f0;
+    font-size: 1rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.messages-empty {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(140, 13, 190, 0.2);
+    padding: 2rem;
+}
+
+.messages-empty-text {
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.message-card form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.delete-message-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.message-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.delete-message-button:hover {
+    background: #ff000053;
+    transform: scale(1.05);
+}
+
+.delete-message-button .trash-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #fff;
+}
+
+.save-message-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #ffdd00;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.save-message-button:hover {
+    background: #00ff0053;
+    transform: scale(1.05);
+}
+
+.save-message-button:active {
+    transform: scale(0.98);
+}
+
+.save-message-button .save-icon,
+.save-message-button .save-icon path {
+    fill: #ffdd00;
+}
+
+@media (max-width: 768px) {
+    .messages-container {
+        padding: 3rem 1rem 2rem;
+    }
+    .messages-container h1 {
+        font-size: 2rem;
+    }
+    .message-card {
+        padding: 1.25rem;
+    }
+    .message-card .message-name {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .messages-container {
+        padding: 2rem 0.75rem 1.5rem;
+    }
+    .messages-container h1 {
+        font-size: 1.75rem;
+    }
+    .message-card {
+        padding: 1rem;
+    }
+}

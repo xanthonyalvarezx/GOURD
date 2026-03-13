@@ -54,10 +54,7 @@ body {
     width: 100%;
     padding: 0.75rem 1rem;
     font-size: 1rem;
-    font-family:
-        system-ui,
-        -apple-system,
-        sans-serif;
+    font-family: "Spline Sans", sans-serif;
     color: #111;
     background-color: #000000;
     border: none;

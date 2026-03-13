@@ -11,6 +11,7 @@
             <h1><a href="{{ route('about') }}">ABOUT</a></h1>
             <h1><a href="{{ route('merch') }}">MERCH</a></h1>
             <h1><a href="{{ route('contact') }}">CONTACT</a></h1>
+            <h1><a href="{{ route('events') }}">EVENTS</a></h1>
         </div>
     </div>
     <div class="nav-mobile-overlay" aria-hidden="true"></div>
@@ -22,5 +23,6 @@
         <a href="{{ route('about') }}">ABOUT</a>
         <a href="{{ route('merch') }}">MERCH</a>
         <a href="{{ route('contact') }}">CONTACT</a>
+        <a href="{{ route('events') }}">EVENTS</a>
     </div>
 </nav>
