@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMessageNotification;
 use App\Models\Events;
 use App\Models\Merch;
 use App\Models\Messages;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {
@@ -113,7 +116,21 @@ class DashboardController extends Controller
             'message' => $validated['message'],
         ]);
 
-        return redirect()->route('contact')->with('success', 'Message sent successfully.');
+        $notificationEmail = config('mail.contact_notification_email') ?: config('mail.from.address');
+        try {
+            Mail::to($notificationEmail)->send(new ContactMessageNotification(
+                $validated['name'],
+                $validated['email'],
+                $validated['message']
+            ));
+            return redirect()->route('contact')->with('success', 'Message sent successfully.');
+        } catch (\Throwable $e) {
+            Log::error('Contact form email failed', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+            return redirect()->route('contact')->with('warning', 'Message saved, but the notification email could not be sent. Check storage/logs/laravel.log for details.');
+        }
     }
 
     public function deleteMessage($id)

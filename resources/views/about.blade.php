@@ -11,12 +11,14 @@
                 <div class="about-text">
                     <h3>Name</h3>
                     <h3>instrument</h3>
+                    <p>Bio</p>
                 </div>
             </div>
             <div class="about-card">
                 <div class="about-text">
                     <h3>Name</h3>
                     <h3>instrument</h3>
+                    <p>Bio</p>
                 </div>
                 <div class="about-photo">
 
@@ -29,6 +31,7 @@
                 <div class="about-text">
                     <h3>Name</h3>
                     <h3>instrument</h3>
+                    <p>Bio</p>
                 </div>
 
             </div>

@@ -19,6 +19,9 @@
         @if (session('success'))
             <div class="form-success">{{ session('success') }}</div>
         @endif
+        @if (session('warning'))
+            <div class="form-warning">{{ session('warning') }}</div>
+        @endif
         <form class="contact-form" action="{{ route('contact') }}" method="POST">
             @csrf
             <div class="form-row">
