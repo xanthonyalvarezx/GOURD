@@ -131,6 +131,6 @@ return [
     | Email address that receives contact form submissions. Override with
     | CONTACT_NOTIFICATION_EMAIL in .env if needed.
     */
-    'contact_notification_email' => env('CONTACT_NOTIFICATION_EMAIL', 'xanthonyalvarezx@gmail.com'),
+    'contact_notification_email' => env('CONTACT_NOTIFICATION_EMAIL'),
 
 ];
