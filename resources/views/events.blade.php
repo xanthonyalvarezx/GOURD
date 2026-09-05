@@ -1,6 +1,6 @@
 <x-main title="EVENTS">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/events.css') }}">
+        <link rel="stylesheet" href="/css/events.css">
     @endpush
     <div class="events-container">
         @forelse ($events as $event)

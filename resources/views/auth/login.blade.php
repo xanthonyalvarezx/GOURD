@@ -1,6 +1,6 @@
 <x-dash title="LOGIN">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+        <link rel="stylesheet" href="/css/login.css">
     @endpush
     <div class="login-container">
         {{-- Login panel (visible by default; hidden if returning to register with errors) --}}

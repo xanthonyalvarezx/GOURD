@@ -1,6 +1,6 @@
 <x-main title="MERCH">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/merch.css') }}">
+        <link rel="stylesheet" href="/css/merch.css">
     @endpush
     <div id="merch-container">
         <container class="main-container">

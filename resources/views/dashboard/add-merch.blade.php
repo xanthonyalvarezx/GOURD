@@ -1,7 +1,7 @@
 <x-dash title="ADD MERCH">
 
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/add-merch.css') }}">
+        <link rel="stylesheet" href="/css/add-merch.css">
     @endpush
     <div class="form-container">
         <h1>ADD MERCH</h1>

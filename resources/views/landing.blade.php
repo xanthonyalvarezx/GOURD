@@ -1,17 +1,18 @@
 <x-main title="HOME">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
+        <link rel="stylesheet" href="/css/landing.css">
     @endpush
     <div id="main-container">
         <div class="albums_div">
             <div class="album_content">
-                <h2>Listen to our new single! Gun to the Sun</h2>
-                <a href="https://open.spotify.com/track/57ASLLQVm3JacVCwa3VQGB?si=ab5bb500d0124a5e" target="_blank"
+                <h2>Listen to our new single! <br /> Lam's Fifth Instruction</h2>
+                <a href="https://open.spotify.com/track/2fRWt9LAeMAYi1ft5n1RSk?si=55274c6f82a9413d" target="_blank"
                     rel="noopener">Stream now on Spotify!</a>
             </div>
             <div class="album_cover">
-                <h1 class="album_title">GUN TO THE SUN</h1>
-                <img src="{{ asset('images/gun_to_the_sun.png') }}" alt="Gun to the Sun album cover" width="500">
+                <h1 class="album_title">Lam's Fifth Instruction</h1>
+                <img src="{{ asset('images/lams_fifth.jpg') }}" alt="Lam's Fifth Instruction album cover"
+                    width="500">
             </div>
         </div>
     </div>
@@ -38,7 +39,8 @@
                     <div class="carousel-slide">
                         <div class="carousel-slide-content">
                             <h2>Nothing Really</h2>
-                            <a href="https://gourdphilly.bandcamp.com/track/nothing-really">
+                            <a href="https://gourdphilly.bandcamp.com/track/nothing-really" target="_blank"
+                                rel="noopener">
                                 <h3>Click here to
                                     listen</h3>
                             </a>
@@ -50,12 +52,24 @@
                     <div class="carousel-slide">
                         <div class="carousel-slide-content">
                             <h2>Uncle Tito's Masquerade</h2>
-                            <a href="https://gourdphilly.bandcamp.com/track/uncle-titos-masquerade">
+                            <a href="https://gourdphilly.bandcamp.com/track/uncle-titos-masquerade" target="_blank"
+                                rel="noopener">
                                 <h3>Click here to
                                     listen</h3>
                             </a>
                         </div>
                         <img src="{{ asset('images/uncle_tito.jpg') }}" alt="uncle tito's masquerade album cover">
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-slide-content">
+                            <h2>Gun to the Sun</h2>
+                            <a href="https://open.spotify.com/track/57ASLLQVm3JacVCwa3VQGB?si=9e0b83c4a2a34e3b"
+                                target="_blank" rel="noopener">
+                                <h3>Click here to
+                                    listen</h3>
+                            </a>
+                        </div>
+                        <img src="{{ asset('images/gun_to_the_sun.png') }}" alt="gun to the sun album cover">
                     </div>
                 </div>
             </div>

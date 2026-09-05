@@ -1,7 +1,7 @@
 <x-dash title="ADD EVENTS">
 
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/add-events.css') }}">
+        <link rel="stylesheet" href="/css/add-events.css">
     @endpush
     <div class="form-container">
         <h1>ADD events</h1>

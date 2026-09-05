@@ -1,6 +1,6 @@
 <x-dash title="VIEW MESSAGES">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/view-messages.css') }}">
+        <link rel="stylesheet" href="/css/view-messages.css">
     @endpush
     <div class="messages-container">
         <h1>MESSAGES</h1>

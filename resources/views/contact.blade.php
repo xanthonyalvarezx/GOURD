@@ -1,6 +1,6 @@
 <x-main title="CONTACT">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+        <link rel="stylesheet" href="/css/contact.css">
     @endpush
     <div class="contact-container">
         <h1>BOOK US FOR AN EVENT</h1>

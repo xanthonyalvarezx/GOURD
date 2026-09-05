@@ -1,6 +1,6 @@
 <x-main title="ABOUT">
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+        <link rel="stylesheet" href="/css/about.css">
     @endpush
     <div id="main-container">
         <div class="card-container">
